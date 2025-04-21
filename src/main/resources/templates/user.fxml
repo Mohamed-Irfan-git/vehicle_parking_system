@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="590.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehicle_parking.frontend.Controller.UserCont">
+   <fx:include source="UserTitle.fxml" />
+   <AnchorPane layoutX="28.0" layoutY="73.0" prefHeight="495.0" prefWidth="574.0">
+      <children>
+         <Label layoutX="248.0" layoutY="26.0" prefHeight="18.0" prefWidth="158.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="ADD USER" />
+         <Label layoutX="26.0" layoutY="82.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="First Name :" />
+         <TextField fx:id="firstNameField" layoutX="117.0" layoutY="86.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="140.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Last Name :" />
+         <TextField fx:id="lastNameField" layoutX="116.0" layoutY="139.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="188.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Email :" />
+         <TextField fx:id="emaiField" layoutX="117.0" layoutY="192.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="240.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Passwod :" />
+         <TextField fx:id="passwordField" layoutX="117.0" layoutY="244.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="293.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Phone :" />
+         <TextField fx:id="phoneField" layoutX="117.0" layoutY="297.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="345.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="NIC :" />
+         <TextField fx:id="nicField" layoutX="117.0" layoutY="345.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <ImageView fitHeight="174.0" fitWidth="203.0" layoutX="374.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../static/adduser.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="saveBtn" layoutX="227.0" layoutY="456.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #211C6A; -fx-font-weight: bold; -fx-text-fill: white; -fx-font-size: 15;" text="SAVE">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+         <ListView fx:id="listView" layoutX="117.0" layoutY="159.0" prefHeight="201.0" prefWidth="222.0" visible="false" />
+         <TextField fx:id="addressField" layoutX="117.0" layoutY="392.0" prefHeight="30.0" prefWidth="222.0" style="-fx-font-weight: bold;" />
+         <Label layoutX="26.0" layoutY="388.0" prefHeight="38.0" prefWidth="108.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Address :" />
+      </children>
+
+   </AnchorPane>
+</AnchorPane>

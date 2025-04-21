@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #89CFF3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehicle_parking.frontend.Controller.Login">
+   <fx:include source="LoginTitleBar.fxml"/>
+   <children>
+      <TextField fx:id="username" layoutX="119.0" layoutY="106.0" prefHeight="35.0" prefWidth="225.0" promptText="Enter Username" style="-fx-border-width: 0 0 2 0; -fx-background-color: white; -fx-font-weight: bold;" />
+      <Button fx:id="login" layoutX="171.0" layoutY="219.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" style="-fx-font-weight: bold; -fx-background-color: #ADC4CE; -fx-font-size: 14;" text="LOGIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="password" layoutX="119.0" layoutY="160.0" prefHeight="35.0" prefWidth="225.0" promptText="Enter Password" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-font-weight: bold;" />
+   </children>
+</AnchorPane>

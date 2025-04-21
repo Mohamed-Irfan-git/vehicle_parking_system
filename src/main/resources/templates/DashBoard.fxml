@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="dashBoardPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #00A9FF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehicle_parking.frontend.Controller.DashBoard">
+
+   <!-- Title Bar at the Top -->
+   <fx:include source="DashboardTitleBr.fxml" />
+
+   <!-- Main Dashboard Content -->
+   <AnchorPane prefHeight="620.0" prefWidth="1200.0">
+      <children>
+         <Pane layoutX="37.0" layoutY="25.0" prefHeight="452.0" prefWidth="546.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="181.0" layoutY="25.0" prefHeight="35.0" prefWidth="184.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="ARRIVED VEHICLE" />
+               <Separator layoutY="67.0" prefHeight="7.0" prefWidth="546.0" />
+               <Separator layoutY="18.0" prefHeight="7.0" prefWidth="546.0" />
+               <Label layoutX="31.0" layoutY="92.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Owner Name :" />
+               <TextField fx:id="AoName" layoutX="119.0" layoutY="97.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="137.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Telephone :" />
+               <TextField fx:id="Aphone" layoutX="119.0" layoutY="141.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <TextField fx:id="Amodel" layoutX="119.0" layoutY="185.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="181.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Model :" />
+               <Label layoutX="31.0" layoutY="222.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Reference No :" />
+               <TextField fx:id="aRef" layoutX="119.0" layoutY="226.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <TextField fx:id="aArrT" layoutX="119.0" layoutY="266.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="262.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Arrival Time :" />
+               <Label layoutX="31.0" layoutY="301.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Slot No :" />
+               <TextField fx:id="aSn" layoutX="119.0" layoutY="305.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Button fx:id="aSave" layoutX="296.0" layoutY="398.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="115.0" style="-fx-font-weight: bold; -fx-border-color: grey;" text="SAVE" />
+               <Button fx:id="aPrint" layoutX="417.0" layoutY="398.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="115.0" style="-fx-font-weight: bold; -fx-border-color: grey;" text="PRINT" />
+               <Label layoutX="31.0" layoutY="336.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Vehicle Type :" />
+               <ComboBox fx:id="dropDown" layoutX="118.0" layoutY="346.0" prefWidth="150.0" promptText="SELECT" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="311.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/car.png" />
+                  </image>
+               </ImageView>
+            </children></Pane>
+         <Pane layoutX="607.0" layoutY="25.0" prefHeight="452.0" prefWidth="546.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="201.0" layoutY="27.0" prefHeight="35.0" prefWidth="184.0" style="-fx-font-weight: bold; -fx-font-size: 18;" text="DISPATCH VEHICLE" />
+               <Separator layoutY="66.0" prefHeight="7.0" prefWidth="546.0" />
+               <Separator layoutY="20.0" prefHeight="7.0" prefWidth="546.0" />
+               <Label layoutX="28.0" layoutY="93.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Reference No :" />
+               <TextField fx:id="dRef" layoutX="127.0" layoutY="97.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="28.0" layoutY="137.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Owner Name :" />
+               <TextField fx:id="dON" layoutX="127.0" layoutY="141.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <TextField fx:id="dModel" layoutX="127.0" layoutY="182.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="178.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Model :" />
+               <TextField fx:id="dArrivalTime" layoutX="127.0" layoutY="224.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="220.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Arrival Time :" />
+               <Label layoutX="31.0" layoutY="259.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Departure Time :" />
+               <TextField fx:id="dDepartureTime" layoutX="127.0" layoutY="263.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="301.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Total Price :" />
+               <TextField fx:id="dTotalPrice" layoutX="127.0" layoutY="305.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <Label layoutX="31.0" layoutY="340.0" prefHeight="35.0" prefWidth="96.0" style="-fx-font-weight: bold;" text="Availability :" />
+               <TextField fx:id="dAvailability" layoutX="127.0" layoutY="344.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" />
+               <ImageView blendMode="SRC_ATOP" fitHeight="131.0" fitWidth="182.0" layoutX="330.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/depature.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="dSave" layoutX="293.0" layoutY="396.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="115.0" style="-fx-font-weight: bold; -fx-border-color: grey;" text="SAVE" />
+               <Button fx:id="dPrint" layoutX="417.0" layoutY="396.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="115.0" style="-fx-font-weight: bold; -fx-border-color: grey;" text="PRINT" />
+            </children></Pane>
+
+         <Pane fx:id="addUser" layoutX="115.0" layoutY="494.0" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="85.0" layoutY="6.0" prefHeight="35.0" prefWidth="64.0" style="-fx-font-weight: bold;" text="ADD USER" />
+               <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/adduser.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Pane>
+
+         <Pane fx:id="addVehicle" layoutX="387.0" layoutY="494.0" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="72.0" layoutY="6.0" prefHeight="35.0" prefWidth="86.0" style="-fx-font-weight: bold;" text="ADD VEHICLE" />
+               <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/addveh.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Pane>
+
+         <Pane fx:id="report" layoutX="660.0" layoutY="494.0" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="94.0" layoutY="6.0" prefHeight="35.0" prefWidth="64.0" style="-fx-font-weight: bold;" text="REPORT" />
+               <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/report.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Pane>
+
+         <Pane fx:id="setting" layoutX="903.0" layoutY="494.0" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="87.0" layoutY="6.0" prefHeight="35.0" prefWidth="64.0" style="-fx-font-weight: bold;" text="SETTING" />
+               <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="20.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/setting.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Pane>
+
+         <Pane fx:id="logout" layoutX="521.0" layoutY="558.0" prefHeight="47.0" prefWidth="158.0" style="-fx-background-color: white;">
+            <children>
+               <Label layoutX="94.0" layoutY="6.0" prefHeight="35.0" prefWidth="64.0" style="-fx-font-weight: bold;" text="LOGOUT" />
+               <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../static/logout.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Pane>
+      </children>
+   </AnchorPane>
+</VBox>

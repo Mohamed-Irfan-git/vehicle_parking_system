@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="370.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehicle_parking.frontend.Controller.VehicleController">
+    <fx:include source="LoginTitleBar.fxml" />
+    <AnchorPane layoutY="72.0" prefHeight="302.0" prefWidth="450.0">
+         <children>
+             <TextField fx:id="VehicleNameField" layoutX="151.0" layoutY="99.0" prefHeight="26.0" prefWidth="170.0" style="-fx-font-weight: bold;" />
+             <Label layoutX="28.0" layoutY="103.0" prefHeight="18.0" prefWidth="92.0" style="-fx-font-weight: bold;" text="Vehicle Nnme :" />
+             <TextField fx:id="PriceFiled" layoutX="151.0" layoutY="161.0" prefHeight="26.0" prefWidth="170.0" style="-fx-font-weight: bold;" />
+             <Label layoutX="28.0" layoutY="165.0" prefHeight="18.0" prefWidth="92.0" style="-fx-font-weight: bold;" text="Price Per Hour :" />
+             <Button fx:id="SaveButton" layoutX="182.0" layoutY="235.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-font-weight: bold; -fx-background-color: #211C6A; -fx-text-fill: white; -fx-font-size: 15;" text="SAVE">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Button>
+             <Label layoutX="172.0" layoutY="14.0" prefHeight="26.0" prefWidth="128.0" style="-fx-font-weight: bold; -fx-font-size: 16;" text="ADD VEHICLE" />
+             <ListView fx:id="listView" layoutX="151.0" layoutY="127.0" prefHeight="94.0" prefWidth="170.0" visible="false" />
+         </children>
+
+    </AnchorPane>
+
+
+</AnchorPane>

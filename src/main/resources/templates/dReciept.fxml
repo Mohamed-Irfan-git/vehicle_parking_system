@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+
+<VBox fx:id="receiptVBox" prefWidth="200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.vehicle_parking.frontend.Controller.DepaturereceiptController" spacing="10" style="-fx-padding: 10;">
+    <children>
+        <!-- Header -->
+        <VBox prefHeight="66.0" prefWidth="200.0" spacing="2">
+            <children>
+                <Label fx:id="dateLabale" alignment="TOP_RIGHT" prefWidth="200.0"
+                       style="-fx-font-size: 10; -fx-font-weight: bold; -fx-padding: 5;" text="2025-04-21" />
+                <Label alignment="CENTER" prefWidth="200.0" style="-fx-font-size: 10; -fx-font-weight: bold;" text="RUHUNA PARKING" />
+                <Label fx:id="headerBox" alignment="CENTER" prefWidth="200.0" style="-fx-font-size: 8; -fx-font-weight: bold;" text="273/G MATARA" />
+                <Separator prefWidth="200.0" style="-fx-min-height: 5;" />
+            </children>
+        </VBox>
+
+        <!-- Info Section -->
+        <GridPane fx:id="itemsBox" hgap="10" vgap="5">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="80"/>
+                <ColumnConstraints halignment="LEFT" minWidth="100"/>
+            </columnConstraints>
+
+            <children>
+                <Label text="REF NO :" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="RefNo" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+                <Label text="OWNER NAME :" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="OwnerName" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+                <Label text="VEHICLE TYPE :" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="VehicleType" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+                <Label text="PRICE / HOUR :" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="PricePerHour" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+
+                <Label text="ARRAIVEL TIME :" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="arrivelTime" GridPane.rowIndex="4" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+
+                <Label text="DEPATURE TIME :" GridPane.rowIndex="5" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="depatureTime" GridPane.rowIndex="5" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+                <Label text="TOTAl HOUR :" GridPane.rowIndex="6" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="totalhours" GridPane.rowIndex="6" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+
+                <Label text="TOTAl :" GridPane.rowIndex="7" GridPane.columnIndex="0" style="-fx-font-size: 10;" />
+                <Label fx:id="totalPrice" GridPane.rowIndex="7" GridPane.columnIndex="1" style="-fx-font-size: 10;" />
+
+            </children>
+        </GridPane>
+
+        <!-- Footer -->
+        <VBox fx:id="footerBox" spacing="2">
+            <children>
+                <Separator prefWidth="200.0" />
+                <Label alignment="CENTER" prefWidth="200.0" style="-fx-font-size: 10; -fx-font-weight: bold;"
+                       text="Thank You Come Again !!!" />
+                <Label alignment="CENTER" prefWidth="200.0" style="-fx-font-weight: bold; -fx-font-size: 10;" text="0740-446949" />
+            </children>
+        </VBox>
+    </children>
+</VBox>

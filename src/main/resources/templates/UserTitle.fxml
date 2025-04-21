@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="titleBar" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" prefHeight="69.0" prefWidth="630.0" style="-fx-background-color: linear-gradient(to right, #B92B27, #1565C0);" styleClass="title-bar" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vehicle_parking.frontend.Controller.CustomTitleBarApp">
+    <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="26.0" prefWidth="419.0" spacing="10" style="-fx-background-color: transparent;">
+        <Label fx:id="titleLabel" textFill="#efefef" />
+        <Label fx:id="timeLabel" prefHeight="34.0" prefWidth="96.0" />
+        <Pane prefHeight="36.0" prefWidth="302.0" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <Button fx:id="closeButton" layoutX="582.0" layoutY="13.0" onAction="#closewindow" prefHeight="13.0" prefWidth="13.0" style="-fx-background-color: red; -fx-background-radius: 50%;" text="X" textFill="#fafafa">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Label layoutX="176.0" layoutY="12.0" prefHeight="27.0" prefWidth="252.0" style="-fx-font-family: Poppins; -fx-font-weight: Bold; -fx-text-fill: white; -fx-font-size: 18;" text="VEHICLE PARKING SYTEM" />
+    <Separator layoutX="83.0" layoutY="36.0" prefHeight="27.0" prefWidth="438.0" />
+       <Button fx:id="minimizeButton" layoutX="541.0" layoutY="12.0" onAction="#minimizeWindow" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: green; -fx-background-radius: 50%;" text="–" textFill="#f4efef">
+           <cursor>
+               <Cursor fx:constant="HAND" />
+           </cursor>
+       </Button>
+    <cursor>
+        <Cursor fx:constant="HAND" />
+    </cursor>
+</AnchorPane>
