@@ -33,7 +33,5 @@ A full-stack Vehicle Parking Management System built using **Java**, **JavaFX**,
 - 🧾 Export vehicle history reports (optional)  
 - 💾 Auto logout of clients when server shuts down  
 
----
 
-## 🖥️ System Architecture
 
