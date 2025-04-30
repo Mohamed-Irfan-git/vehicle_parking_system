@@ -15,11 +15,6 @@ A full-stack Vehicle Parking Management System built using **Java**, **JavaFX**,
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of the application UI here (login page, dashboard, etc.)_
-
----
 
 ## ✨ Features
 
